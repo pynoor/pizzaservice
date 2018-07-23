@@ -25,7 +25,18 @@ The Order data should be as follows:
 - customer name
 - address
 
+
+
+## Tests:
 I will be attempting to do TDD (Test driven development) all throughout the project, let's see how this will go.
+
+The tests can be performed by executing the following command from the command line:
+
+>$ python3 manage.py test
+
+Specific tests can be ran by:
+
+>$ python3 manage.py test app_name.tests
 
 ## Disclaimers:
 
