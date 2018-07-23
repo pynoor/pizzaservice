@@ -32,6 +32,8 @@ I will be attempting to do TDD (Test driven development) all throughout the proj
 This is my second project using django and my first time ever using the Django REST framework. Don't judge.
 
 Also, Django seems to use Sqlite by Default, however I was asked to use PostgreSQL. I will be starting off by using the default database and will try to find out how to switch to PostgreSQL along the way.
+More on how Django handles databases to be found here:
+https://docs.djangoproject.com/en/2.0/ref/databases/
 
 
 
@@ -44,3 +46,5 @@ https://scotch.io/tutorials/build-a-rest-api-with-django-a-test-driven-approach-
 http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/
 
 https://docs.djangoproject.com/en/2.0/topics/testing/overview/
+
+https://docs.djangoproject.com/en/2.0/ref/databases/
