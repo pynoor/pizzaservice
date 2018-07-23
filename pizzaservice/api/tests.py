@@ -6,7 +6,7 @@ class ModelTestCase(TestCase):
 
     def setUp(self):
         self.pizza_id = 1
-        self.pizza_size = "30cm"
+        self.pizza_size = 30
         self.customer_name = "Jobo"
         self.customer_address = "Weirdroad 17, 15533 Outerspace, Universe"
         self.order = Order(pizza_id=self.pizza_id, pizza_size=self.pizza_size,
