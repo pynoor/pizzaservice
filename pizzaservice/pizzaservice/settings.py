@@ -79,11 +79,14 @@ WSGI_APPLICATION = 'pizzaservice.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'pizzaservice',
+        'NAME': 'pizzaservicedb',
         'USER': '',
         'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'HOST': '',
+        'PORT': '',
+        'TEST': {
+            'NAME': 'pizzaservicetestdb',
+        }
     }
 }
 
