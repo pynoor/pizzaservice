@@ -35,10 +35,12 @@ Also, Django seems to use Sqlite by Default, however I was asked to use PostgreS
 
 
 
-## Resources:
+## Useful Resources:
 
 http://www.django-rest-framework.org/
 
 https://scotch.io/tutorials/build-a-rest-api-with-django-a-test-driven-approach-part-1
 
 http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/
+
+https://docs.djangoproject.com/en/2.0/topics/testing/overview/
