@@ -2,7 +2,7 @@ from django.test import TestCase
 from .models import Order
 
 # Create your tests here.
-class ModelTestCase(TestCase):
+class OrderTestCase(TestCase):
 
     def setUp(self):
         self.pizza_id = 1
