@@ -31,6 +31,8 @@ I will be attempting to do TDD (Test driven development) all throughout the proj
 
 This is my second project using django and my first time ever using the Django REST framework. Don't judge.
 
+Also, Django seems to use Sqlite by Default, however I was asked to use PostgreSQL. I will be starting off by using the default database and will try to find out how to switch to PostgreSQL along the way.
+
 
 
 ## Resources:
