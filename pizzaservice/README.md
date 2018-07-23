@@ -19,6 +19,12 @@ We want to have a simple pizza delivery service with the following functionaliti
 
 (CRUD is actually a thing, more about that here: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
 
+The Order data should be as follows:
+- pizza id
+- pizza size
+- customer name
+- address
+
 I will be attempting to do TDD (Test driven development) all throughout the project, let's see how this will go.
 
 ## Disclaimers:
