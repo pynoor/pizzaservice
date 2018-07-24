@@ -42,7 +42,7 @@ Specific tests can be ran by:
 
 This is my second project using django and my first time ever using the Django REST framework. Don't judge.
 
-Also, Django seems to use Sqlite by Default, however I was asked to use PostgreSQL. I will be starting off by using the default database and will try to find out how to switch to PostgreSQL along the way.
+Also, Django seems to use Sqlite3 by default, however I was asked to use PostgreSQL. I will be starting off by using the default database and will try to find out how to switch to PostgreSQL along the way.
 More on how Django handles databases to be found here:
 https://docs.djangoproject.com/en/2.0/ref/databases/
 
@@ -61,3 +61,13 @@ https://docs.djangoproject.com/en/2.0/topics/testing/overview/
 https://docs.djangoproject.com/en/2.0/ref/databases/
 
 https://medium.com/@jtpaasch/the-right-way-to-use-virtual-environments-1bc255a0cba7
+
+https://docs.djangoproject.com/en/2.0/releases/1.9/#features-deprecated-in-1-9
+
+https://docs.djangoproject.com/en/2.0/ref/urlresolvers/
+
+https://www.postgresql.org/docs/9.5/static/datatype.html
+
+https://simpleisbetterthancomplex.com/tutorial/2016/07/26/how-to-reset-migrations.html
+
+https://docs.djangoproject.com/en/2.0/ref/models/fields/
