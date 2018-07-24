@@ -12,10 +12,10 @@ Cool, now that we know what a REST API is, let's get started.
 ## The task:
 We want to have a simple pizza delivery service with the following functionalities:
 
-- C reate an order
-- R etrieve an order / See a list of all orders
-- U pdate an order
-- D elete an order
+- C reate an order (POST request)
+- R etrieve an order / See a list of all orders (GET request)
+- U pdate an order (PUT request)
+- D elete an order (DELETE request)
 
 (CRUD is actually a thing, more about that here: https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
 
