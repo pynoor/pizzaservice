@@ -59,3 +59,5 @@ http://www.andrewhavens.com/posts/20/beginners-guide-to-creating-a-rest-api/
 https://docs.djangoproject.com/en/2.0/topics/testing/overview/
 
 https://docs.djangoproject.com/en/2.0/ref/databases/
+
+https://medium.com/@jtpaasch/the-right-way-to-use-virtual-environments-1bc255a0cba7
