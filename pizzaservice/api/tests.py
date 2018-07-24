@@ -43,3 +43,13 @@ class ViewTestCase(TestCase):
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertContains(response, order)
+
+    def test_api_can_update_an_order(self):
+
+        change_order = {'pizza_id': 7}
+        response = self.client.put(
+            reverse('details', kwargs={'pk': order.id}),
+            change_order, format='json'
+        )
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
