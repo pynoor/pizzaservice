@@ -10,5 +10,3 @@ class Order(models.Model):
 
     def __str__(self):
         return str(self.pizza_id)
-
-    #!! need to fix this. somehow a default is needed...
