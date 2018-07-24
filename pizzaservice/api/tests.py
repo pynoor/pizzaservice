@@ -25,12 +25,11 @@ class ViewTestCase(TestCase):
 
     def setUp(self):
         self.client = APIClient()
-        self.order_data = {'pizza_id': 1, 'pizza_size': 30, 'customer_name': 'Jobo', 'customer_adress': 'Weirdroad 17, 15533 Outerspace, Universe'}
+        self.order_data = {'pizza_id': 1, 'pizza_size': 30, 'customer_name': 'Jobo', 'customer_address': 'Weirdroad 17, 15533 Outerspace, Universe'}
         self.response = self.client.post(
             reverse('create'),
             self.order_data,
-            format='json'
-        )
+            format='json')
 
     def test_api_can_create_an_order(self):
         self.assertEqual(self.response.status_code, status.HTTP_201_CREATED)
