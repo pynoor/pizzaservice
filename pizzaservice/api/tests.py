@@ -1,8 +1,8 @@
 from django.test import TestCase
 from .models import Order
 from rest_framework import status
-from rest_framework import APIClient
-from django.core.urlresolvers import reverse
+from rest_framework.test import APIClient
+from django.urls import reverse
 
 # Create your tests here.
 class OrderTestCase(TestCase):
