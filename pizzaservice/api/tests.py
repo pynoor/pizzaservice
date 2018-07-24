@@ -44,12 +44,23 @@ class ViewTestCase(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertContains(response, order)
 
+    def test_api_can_delete_an_order(self):
+        order = Order.objects.get()
+        response = self.client.delete(
+            reverse('details', kwargs={'pk': order.id}),
+            format='json',
+            follow=True
+        )
+        self.assertEquals(response.status_code, status.HTTP_204_NO_CONTENT)
+
+
     def test_api_can_update_an_order(self):
         order = Order.objects.get()
-        change_order = {'pizza_id': 7}
+        change_order = {'pizza_size': 50}
         response = self.client.put(
             reverse('details', kwargs={'pk': order.id}),
-            change_order, format='json'
+            change_order,
+            format='json'
         )
-
         self.assertEqual(response.status_code, status.HTTP_200_OK)
+
