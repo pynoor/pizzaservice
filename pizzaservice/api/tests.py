@@ -29,7 +29,17 @@ class ViewTestCase(TestCase):
         self.response = self.client.post(
             reverse('create'),
             self.order_data,
-            format='json')
+            format='json'
+            )
 
     def test_api_can_create_an_order(self):
         self.assertEqual(self.response.status_code, status.HTTP_201_CREATED)
+
+    def test_api_can_get_an_order(self):
+        order = Order.objects.get()
+        response = self.client.get(
+            reverse('details', kwargs={'pk': order.id}),
+            format='json'
+        )
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertContains(response, order)
