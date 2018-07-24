@@ -13,3 +13,9 @@ class OrderCreateView(generics.ListCreateAPIView):
 
     def perform_create(self, serializer):
         serializer.save()
+
+class OrderDetailsView(generics.RetrieveUpdateDestroyAPIView):
+    """This class handles the http GET, PUT, and DELETE requests."""
+
+    queryset = Order.objects.all()
+    serializer_class = OrderSerializer
