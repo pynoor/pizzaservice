@@ -45,7 +45,7 @@ class ViewTestCase(TestCase):
         self.assertContains(response, order)
 
     def test_api_can_update_an_order(self):
-
+        order = Order.objects.get()
         change_order = {'pizza_id': 7}
         response = self.client.put(
             reverse('details', kwargs={'pk': order.id}),
