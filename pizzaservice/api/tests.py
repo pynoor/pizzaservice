@@ -56,7 +56,7 @@ class ViewTestCase(TestCase):
 
     def test_api_can_update_an_order(self):
         order = Order.objects.get()
-        change_order = {'pizza_size': 50}
+        change_order = {'pizza_id': 2, 'pizza_size': 30, 'customer_name': 'Jobo', 'customer_address': 'Weirdroad 17, 15533 Outerspace, Universe'}
         response = self.client.put(
             reverse('details', kwargs={'pk': order.id}),
             change_order,
