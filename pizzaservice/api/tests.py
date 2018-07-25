@@ -5,6 +5,7 @@ from rest_framework.test import APIClient
 from django.urls import reverse
 
 
+
 class OrderTestCase(TestCase):
 
     def setUp(self):
@@ -64,3 +65,12 @@ class ViewTestCase(TestCase):
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
+    def test_api_cannot_create_pizza_of_wrong_size(self):
+        self.client = APIClient()
+        self.order_data = {'pizza_id': 3, 'pizza_size': 40, 'customer_name': 'Jobo', 'customer_address': 'Weirdroad 17, 15533 Outerspace, Universe'}
+        response = self.client.post(
+            reverse('create'),
+            self.order_data,
+            format='json'
+            )
+        self.assertEqual(str(response.data), """{'pizza_size': [ErrorDetail(string="That's a strange pizza. Try a different size.", code='invalid')]}""")
