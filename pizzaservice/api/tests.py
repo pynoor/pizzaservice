@@ -66,6 +66,7 @@ class ViewTestCase(TestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_api_cannot_create_pizza_of_wrong_size(self):
+        orders_count = Order.objects.count()
         self.client = APIClient()
         self.order_data = {'pizza_id': 3, 'pizza_size': 40, 'customer_name': 'Jobo', 'customer_address': 'Weirdroad 17, 15533 Outerspace, Universe'}
         response = self.client.post(
@@ -73,4 +74,6 @@ class ViewTestCase(TestCase):
             self.order_data,
             format='json'
             )
-        self.assertEqual(str(response.data), """{'pizza_size': [ErrorDetail(string="That's a strange pizza. Try a different size.", code='invalid')]}""")
+        self.assertEqual(Order.objects.count(), orders_count)
+
+
