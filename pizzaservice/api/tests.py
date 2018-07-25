@@ -19,7 +19,7 @@ class OrderTestCase(TestCase):
         old_count = Order.objects.count()
         self.order.save()
         new_count = Order.objects.count()
-        self.assertNotAlmostEqual(old_count, new_count)
+        self.assertNotEqual(old_count, new_count)
 
 class ViewTestCase(TestCase):
 
