@@ -8,7 +8,7 @@ def validate_pizza_size(value):
             _("That's a strange pizza. Try a different size.")
         )
 
-# Create your models here.
+
 class Order(models.Model):
     id = models.AutoField(primary_key=True)
     pizza_id = models.IntegerField()
