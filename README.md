@@ -26,7 +26,10 @@ The Order data should be as follows:
 - address
 
 ## The database:
-Starting off this project, I wanted to keep things as simple as possible. So I only had one model, which was 'order'. On further reflection, I think it would make sense to add at least two more models which will be 'Customer' and 'Pizza'. That will allow us to smoothly make more specific requests such as 'How many times a specific pizza has been ordered' or 'Who is our most loyal customer'.
+Starting off this project, I wanted to keep things as simple as possible. So I only had one model, which was 'order'. On further reflection, I think it would make sense to add at least two more models which will be 'Customer' and 'Pizza'. That will allow us to
+add more specific information to the pizza and still 'include' Normalization...
+
+TODO: reword this.
 
 ## Tests:
 I will be attempting to do TDD (Test driven development) all throughout the project, let's see how this will go.
