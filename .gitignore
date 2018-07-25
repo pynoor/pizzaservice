@@ -1,4 +1,4 @@
 venv
 /db.sqlite3
-/pizzaservice/__pycache__
+/pizzaservice/pizzaservice/__pycache__
 /pizzaservice/.DS_Store
