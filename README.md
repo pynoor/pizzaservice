@@ -40,10 +40,10 @@ Specific tests can be ran by:
 
 ## Disclaimers:
 
-This is my second project using django and my first time ever using the Django REST framework. Don't judge.
+This is my second project using Django and my first time ever using the Django REST framework. Don't judge.
 
-Also, Django seems to use Sqlite3 by dhttps://github.com/pynoor/pizzaserviceefault, however I was asked to use PostgreSQL. I will be starting off by using the default database and will try to find out how to switch to PostgreSQL along the way.
-More on how Django handles databases to be found here:
+Also, Django seems to use Sqlite3 by dhttps://github.com/pynoor/pizzaserviceefault, however I was asked to use PostgreSQL. Therefore, I have configured the DATABASE section in the settings.py file to use my Postgresql database 'pizzaservicedb'.
+How I did that and more on how Django handles databases to be found here:
 https://docs.djangoproject.com/en/2.0/ref/databases/
 
 
