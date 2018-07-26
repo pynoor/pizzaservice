@@ -47,6 +47,7 @@ Also, Django seems to use Sqlite3 by dhttps://github.com/pynoor/pizzaserviceefau
 How I did that and more on how Django handles databases to be found here:
 https://docs.djangoproject.com/en/2.0/ref/databases/
 
+The documentation is still to come. Waiting for this finals season to pass...
 
 
 ## Useful Resources:
