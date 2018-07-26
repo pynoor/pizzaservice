@@ -26,10 +26,7 @@ The Order data should be as follows:
 - address
 
 ## The database:
-Starting off this project, I wanted to keep things as simple as possible. So I only had one model, which was 'order'. On further reflection, I think it would make sense to add at least two more models which will be 'Customer' and 'Pizza'. That will allow us to
-add more specific information to the pizza and still 'include' Normalization...
-
-TODO: reword this
+Starting off this project, I wanted to keep things as simple as possible, so I only had one model, which was 'order'. Today I came across the concept of 'Normalization' though (see https://en.wikipedia.org/wiki/Database_normalization) which made me think: Wouldn't it make sense to add a few more models? Say 'Customer' and 'Pizza'? The order would have a one-to-one relation with the customer and the pizza, while both the customer and the pizza would have to have a one-to-many relationship with the orders. My first try at implementing this ended up in me messing my whole code up. Thank God for Git. I made that hard reset 'real quick'. For the sake of this project, and finals season,  I will hence remain with this single Order model - of course with the intention to come back and solve the opened issue.
 
 ## Tests:
 I will be attempting to do TDD (Test driven development) all throughout the project, let's see how this will go.
